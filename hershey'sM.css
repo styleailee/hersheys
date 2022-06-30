@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+
+
+/* Top */
+
+body{
+   
+    min-width: 320px;
+}
+
+.recipes_photo,
+.brand_photo{
+    display: none;
+}
+
+
+.left_history p{
+    font-size: 0.8rem;
+    margin: 276px 10px -5px 10px;
+}
+
+.left_history h1 {
+    font-size: 1rem;   
+    margin: 10px 0px -20px 0px;
+}
+
+.top_logo {  
+    width: 252px;
+    height: 86px;
+  
+}
+
+.menu-icon .menu-sticks { 
+    width: 25px;
+  }
+.menu {
+    top: 78px;
+    width: 84px;
+    height: 10%;
+}
+  
+  .menu a{
+    font-size: 1rem;
+    
+}
+.menu-check:checked~.menu {
+    max-width: 72px;
+}
+.sec01 {
+   
+     height: 580px;
+     margin: 29vh 0 0 0px;
+}
+.box01 {
+  
+  
+    height: 584px;
+   
+    margin-top: 20%;
+  
+}
+
+.left_history span{
+    margin: 0 0 25px 0px;
+    font-size: 1.8rem;
+}
+video {
+    width: 100vw;
+    height: 100vw;
+    overflow: hidden;
+    position: fixed;
+    top: 81px;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+
+.story01, 
+.story02, 
+.story03 {
+    background-size: 285px 240px;
+    width: 280px;
+    height: 250px;
+    margin: 46px;
+  
+}
+.box02 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #33100c;
+    width: 100%;
+    height: 555px;
+}
+.logo_01 {   
+    width: 60%;
+    top: 505px;
+    left: 25%;
+}
+
+.recipetitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+  margin: 0px 0px -75px 0px;
+}
+.sec04 {
+ 
+  
+    height: 100%;
+}
+footer {
+    font-size: 0.8rem;
+    flex-direction: column;
+    height: 370px; 
+}
+address{
+font-size: 0.8rem;
+}
+.swiper {
+    width: 100%;
+    padding-top: 550px;
+}
+
+.location-title {
+        font-size: 0.8em;}
+
+address, 
+.company {
+margin: 16px;
+ }       
+ .location-image a img{
+    width:100%;
+    height:150px;
+    
+    }

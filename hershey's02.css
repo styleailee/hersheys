@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  
+}
+
+a:link,
+a:visited {
+    color: #33100c ;
+    text-decoration: none
+}
+
+a:hover {
+    color: #9c1101;
+}
+
+a:active {
+    color: #33100c
+}
+li {
+    list-style-type: none;
+}
+
+header{
+    margin: 0 auto;
+    background-color:#a38373be;
+    height: 100px;
+  
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 30%;
+    max-width: 0;
+    transition: 0.5s ease;
+    z-index: 1;
+    
+    width: 150px;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    padding: 10px 0;
+    top: 40px;
+    right: 15px;
+    user-select: none;
+    width: auto;
+    margin: 0;
+  }
+  .menu a{
+      font-size: 1.8rem;
+      color: #33100c;
+  }
+  .menu-icon .menu-sticks {
+      
+    background: rgb(129, 27, 27);
+    display: block;
+    height: 4px;
+    position: relative;
+    transition: background .3s ease-out;
+    width: 40px;
+  
+  }
+  
+  .menu-icon .menu-sticks:before,
+  .menu-icon .menu-sticks:after {
+    background: #33100c80;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .menu-icon .menu-sticks:before {
+    top: 7px;
+  }
+  
+  .menu-icon .menu-sticks:after {
+    top: -7px;
+  }
+  
+  .menu-check {
+    display: none;
+  }
+  
+  .menu-check:checked~.menu {
+    max-width: 200px;
+  }
+  
+  .menu-check:checked~.menu-icon .menu-sticks {
+    background: transparent;
+  }
+  
+  .menu-check:checked~.menu-icon .menu-sticks:before {
+    transform: rotate(-45deg);
+  }
+  
+  .menu-check:checked~.menu-icon .menu-sticks:after {
+    transform: rotate(45deg);
+  }
+  
+  .menu-check:checked~.menu-icon:not(.steps) .menu-sticks:before,
+  .menu-check:checked~.menu-icon:not(.steps) .menu-sticks:after {
+    top: 0;
+  }
+  
+.top_logo {
+    background-image: url(/imges/Hershys/toplogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 234px;
+    height: 90px;
+   margin: 0 auto; 
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+    background-color: #a38373be;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  overflow-X: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #a38373be;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+:root {
+    --swiper-theme-color: #311403;;
+}

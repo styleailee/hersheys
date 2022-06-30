@@ -1,0 +1,255 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  
+}
+
+a:link,
+a:visited {
+    color: #33100c ;
+    text-decoration: none
+}
+
+a:hover {
+    color: #9c1101;
+}
+
+a:active {
+    color: #33100c
+}
+li {
+    list-style-type: none;
+}
+
+body {
+
+
+  background-color: #a38373be;
+    overflow-X: hidden;
+
+}
+
+
+.menu {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 30%;
+    max-width: 0;
+    transition: 0.5s ease;
+    z-index: 1;
+    
+    width: 150px;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    padding: 10px 0;
+    top: 40px;
+    right: 15px;
+    user-select: none;
+    width: auto;
+    margin: 0;
+  }
+  .menu a{
+      font-size: 1.8rem;
+      color: #33100c;
+  }
+  .menu-icon .menu-sticks {
+      
+    background: rgb(129, 27, 27);
+    display: block;
+    height: 4px;
+    position: relative;
+    transition: background .3s ease-out;
+    width: 40px;
+  
+  }
+  
+  .menu-icon .menu-sticks:before,
+  .menu-icon .menu-sticks:after {
+    background: #33100c80;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .menu-icon .menu-sticks:before {
+    top: 7px;
+  }
+  
+  .menu-icon .menu-sticks:after {
+    top: -7px;
+  }
+  
+  .menu-check {
+    display: none;
+  }
+  
+  .menu-check:checked~.menu {
+    max-width: 200px;
+  }
+  
+  .menu-check:checked~.menu-icon .menu-sticks {
+    background: transparent;
+  }
+  
+  .menu-check:checked~.menu-icon .menu-sticks:before {
+    transform: rotate(-45deg);
+  }
+  
+  .menu-check:checked~.menu-icon .menu-sticks:after {
+    transform: rotate(45deg);
+  }
+  
+  .menu-check:checked~.menu-icon:not(.steps) .menu-sticks:before,
+  .menu-check:checked~.menu-icon:not(.steps) .menu-sticks:after {
+    top: 0;
+  }
+  
+
+
+.top_logo {
+    background-image: url(/imges/Hershys/toplogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 234px;
+    height: 170px;
+   margin: auto;
+  
+  
+}
+header{
+    margin: 0 auto;
+    background-color: #a38373be;
+    height: 170px;
+  
+}
+.sec{
+  border: 5px solid #33100c;
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+
+
+}
+
+
+.sec h1{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px;
+}
+.recipes01{
+margin: 0 auto;
+background: url(/imges/Hershys/recipes01.png) no-repeat;
+width: 300px;
+height: 240px;
+}
+.recipes02{
+margin: 0 auto;
+background: url(/imges/Hershys/recipes02.png) no-repeat;
+width: 300px;
+height: 240px;
+}
+.recipes03{
+margin: 0 auto;
+background: url(/imges/Hershys/recipes03.png) no-repeat;
+width: 300px;
+height: 240px;
+}
+.recipes04{
+margin: 0 auto;
+background: url(/imges/Hershys/recipes04.png) no-repeat;
+width: 300px;
+height: 240px;
+}
+.recipes05{
+margin: 0 auto;
+background: url(/imges/Hershys/recipes05.png) no-repeat;
+width: 300px;
+height: 240px;
+}
+.recipes06{
+margin: 0 auto;
+background: url(/imges/Hershys/recipes06.png) no-repeat;
+width: 300px;
+height: 240px;
+}
+.recipes07{
+margin: 0 auto;
+background: url(/imges/Hershys/recipes07.png) no-repeat;
+width: 300px;
+height: 240px;
+}
+.recipes08{
+margin: 0 auto;
+background: url(/imges/Hershys/recipes08.png) no-repeat;
+width: 300px;
+height: 240px;
+}
+
+.recipestext01{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 50px 5px 50px;
+    font-size: 0.9rem;
+}
+.recipesmenu{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 0 200px 0px;
+   
+}
+
+.recipesbox{
+
+display: inline-block;
+border: 6px solid transparent;
+border-left-color: #33100c;
+
+}
+.recipes a{
+ margin-left: 600px;
+ font-size: 0.8rem;
+}
+footer {
+
+  font-size: 1rem;
+  font-weight: 300;
+  display: flex;
+  width: 100%;
+  height: 270px;
+  justify-content: space-between;
+  background-color: #a38373be;
+  background-size: cover;
+  color: #fff;
+ 
+  
+
+}
+
+
+address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  text-emphasis: none;
+  font-size: 1rem;
+  color: #33100c;
+
+}
+.company,
+address{
+  margin: 20px 20px 0 20px;
+}

@@ -1,0 +1,511 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=PT+Serif&family=Scheherazade+New&display=swap');
+/* 구글폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+/* 구글아이콘 */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  
+}
+    /* outline: 1px solid rgb(238, 2, 2); */
+
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: #fff ;
+    text-decoration: none
+}
+
+a:hover {
+    color: #e7d7d5;
+}
+
+a:active {
+    color: #33100c;
+}
+
+
+
+
+li {
+    list-style-type: none;
+}
+
+body {
+
+background-color: #a38373be;
+background-size: cover;
+overflow-X: hidden;
+font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+/* Top */
+
+.menu ul li > a span:hover{
+    color: #fcf2f1;
+}
+.menu ul li{
+margin: 77px 0 0 42px;
+}
+/* .menu ul li > a span{
+LE
+} */
+
+.menu {
+    position: absolute;
+    top: 110px;
+    right: 0;
+    height: 60%;
+    max-width: 0;
+    transition: 0.5s ease;
+    z-index: 1;
+    background: url("/imges/Hershys/menu.png") no-repeat;
+    width: 234px;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    padding: 10px 0;
+    top: 55px;
+    right: 55px;
+    user-select: none;
+    width: auto;
+    margin: 0;
+  }
+  .menu a{
+      font-size: 1.4rem;
+      color: #33100c;
+      font-weight: 500;
+    letter-spacing: -2px;
+    line-height: 50px;
+    
+  }
+  .menu-icon .menu-sticks {
+      
+    background: #33100c;
+    display: block;
+    height: 4px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 40px;
+  
+  }
+  
+  .menu-icon .menu-sticks:before,
+  .menu-icon .menu-sticks:after {
+    background: #33100c80;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .3s ease-out;
+    width: 100%;
+  }
+  
+  .menu-icon .menu-sticks:before {
+    top: 12px;
+  }
+  
+  .menu-icon .menu-sticks:after {
+    top: -12px;
+  }
+  
+  .menu-check {
+    display: none;
+  }
+  
+  .menu-check:checked~.menu {
+    max-width: 184px;
+  }
+  
+  .menu-check:checked~.menu-icon .menu-sticks {
+    background: transparent;
+  }
+  
+  .menu-check:checked~.menu-icon .menu-sticks:before {
+    transform: rotate(-45deg);
+  }
+  
+  .menu-check:checked~.menu-icon .menu-sticks:after {
+    transform: rotate(45deg);
+  }
+  
+  .menu-check:checked~.menu-icon:not(.steps) .menu-sticks:before,
+  .menu-check:checked~.menu-icon:not(.steps) .menu-sticks:after {
+    top: 0;
+  }
+  
+
+
+.top_logo {
+    background-image: url(/imges/Hershys/toplogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 234px;
+    height: 133px;
+   margin: auto;
+  
+  
+}
+
+header{
+    margin: 0 auto;
+}
+.sec01 {
+    margin: 100vh 0 0 0px;
+    padding: 0;
+
+}
+
+.left_history {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+
+
+}
+
+.box01 {
+    background-color: #33100c80;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin-top: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.left_history span {
+    text-decoration: underline;
+    color: #cccccc;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 25px 0px;
+    letter-spacing: -2px;
+}
+
+.left_history p {
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+    margin: 20px 0 20px 0px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.left_history h1 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin: 45px 0 0 0px;
+    text-align: center;
+    padding: 0 0 0 0px;
+    font-weight: 600;
+
+}
+
+.left_history {
+    display: flex;
+}
+
+/* section 2  */
+
+
+.box02 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #33100c;
+    width: 100%;
+    height: 570px;
+
+}
+.story01 p{
+    font-size: 0.9rem;
+}
+
+.story01 {
+    background: url(/imges/Hershys/milton.png);
+   background-repeat: no-repeat;
+   background-size: 312px 300px;
+   width: 320px;
+   height: 300px;
+   margin: 75px;
+  
+}
+
+.story02 {
+    background: url(/imges/Hershys/histry02.png);
+    background-repeat: no-repeat;
+    background-size: 312px 300px;
+    width: 320px;
+    height: 300px;
+    margin: 75px;
+}
+.story03 {
+    background: url(/imges/Hershys/historylogo.png);
+    background-repeat: no-repeat;
+    background-size: 312px 300px;
+    width: 320px;
+    height: 300px;
+    margin: 75px;
+}
+
+
+.box2_01 a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box2_01 span {
+    font-size: 1.5rem;
+    margin-top: -50px;
+}
+
+
+
+/* background 이미지 */
+.brand_photo {
+    background: url(/imges/Hershys/hersheysbackground01.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* -webkit-background-size: cover; */
+    background-position: top center;
+    height: 60vh;
+    width: 100%;
+    padding-top: 230px;
+    padding-bottom: 230px;
+    /* overflow: hidden; */
+    position: relative;
+    background-blend-mode:multiply;
+    background-color: #a38373be;
+
+}
+
+/* sec03 
+brand */
+/* 슬라이드 */
+.sec03 {
+    background-color: #33100c;
+    background-size: cover;
+}
+
+.logo_01 {
+    background: url(/imges/Hershys/whitelogo\ 1.png);
+    background-repeat: no-repeat;
+    width: 38%;
+    height: 54px;
+    position: relative;
+    top: 28px;
+    left: 46%;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    --swiper-theme-color: #d7e2ed;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+
+/* sec04 */
+
+.recipes_photo {
+
+    background: url(/imges/Hershys/hersheysbackground02.png);
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-position: top center;
+    height: 60vh;
+    width: 100%;
+    padding-top: 230px;
+    padding-bottom: 230px;
+    overflow: hidden;
+    position: relative;
+    background-blend-mode:multiply;
+    background-color: #b4a39abe;
+
+
+}
+
+
+/* 레시피 */
+.sec04 {
+
+    background-color: #33100c;
+    background-size: cover;
+    width: 100%;
+    height: 375px;
+}
+
+.recipetitle {
+    font-size: 1.9rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    padding: 23px 0px 35px 0px;
+}
+
+.grid-recipe {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(196px, 1fr));
+    grid-gap: 1em;
+    margin: 64px 20px 0px 20px;
+}
+
+
+/* hover styles */
+.location-image a img{
+width:220px;
+height:180px;
+
+}
+
+.location-listing {
+    position: relative;
+    padding: 0 0 0px;
+}
+
+.location-image {
+    line-height: 0;
+    overflow: hidden;
+}
+
+.location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+}
+
+.location-title {
+    font-size: 1em;
+    font-weight: lighter;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(90, 0, 10, 0.4);
+    color: white;
+
+    /* position the text in t’ middle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-listing:hover .location-title {
+    opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+    filter: blur(2px);
+}
+
+
+/* for touch screen devices */
+@media (hover: none) {
+    .location-title {
+        opacity: 1;
+    }
+
+    .location-image img {
+        filter: blur(1px);
+    }
+}
+
+
+
+/* footer */
+
+
+footer {
+
+    font-size: 1rem;
+    font-weight: 300;
+    display: flex;
+    width: 100%;
+    height: 270px;
+    justify-content: space-between;
+    background-color: #33100c;
+    background-size: cover;
+    color: #fff;
+   
+    
+  
+}
+
+
+address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    text-emphasis: none;
+    font-size: 1rem;
+    color: #fff;
+
+}
+.company,
+address{
+  margin: 20px 20px 0 20px;
+}
+
+
+/* footer {
+    bottom: 0;
+} */
+
+video {
+    width: 100vw;
+    height: 65vw;
+    overflow: hidden;
+    position: fixed;
+    top: 14px;
+    left: 0;
+    z-index: -1;
+}
+
+.sns img {
+    width: 24px;
+    height: 24px;
+    margin: 9px 3px 6px 7px;
+
+}
